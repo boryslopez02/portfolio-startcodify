@@ -1,0 +1,144 @@
+/* Planes */
+.plans
+    .container
+        .display-1
+            display: block
+            width: 90%
+            font-size: 2rem
+            font-weight: 800
+            color: $primary
+            margin: 30px auto
+            text-align: center
+        .all-plans
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-wrap: wrap
+            .item
+                display: block
+                width: 100%
+                max-width: 500px
+                margin: 30px auto
+                padding: 10px 15px
+                box-shadow: 0px 0px 5px rgba(0,0,0,0.1)
+                transition: .6s ease all
+                &:hover
+                    transform: translateY(-10px)
+                    box-shadow: 5px 5px 10px rgba(0,0,0,0.1)
+                .box
+                    display: flex
+                    align-items: center
+                    img
+                        width: 60px
+                        height: 60px
+                        object-fit: cover
+                        margin-right: 10px
+                        padding: 10px
+                        border-radius: 6px
+                        transition: .6s ease all
+                    h1
+                        font-family: $font2
+                        font-size: 1.3rem
+                        font-weight: 600
+                        color: $primary
+                        transition: .6s ease all
+                .item-descrip
+                    display: block
+                    font-size: 1rem
+                    font-weight: 800
+                    color: $dark
+                    margin: 15px 0
+                    transition: .6s ease all
+                .item-info
+                    font-size: 1rem
+                    font-weight: 300
+                    line-height: 25px
+                    transition: .6s ease all
+                .item-objetive
+                    margin-top: 15px
+                    padding-left: 20px
+                    li
+                        font-family: $font1
+                        font-size: .8rem
+                        font-weight: 600
+                        color: $dark
+                        list-style: disc
+                        line-height: 25px
+                        margin: 10px 0
+                        transition: .6s ease all
+            .land, .shop
+                background: $primary
+                border: 2px solid $primary
+                .box h1, .item-descrip, .item-info, .item-objetive li   
+                    color: white
+                .box
+                    img
+                        background: white
+            .corp, .cat
+                border: 2px solid $dark
+                background: $dark
+                .box h1, .item-descrip, .item-info, .item-objetive li   
+                    color: white
+                .box img 
+                    background: white
+            .contain
+                width: 100%
+                .btn
+                    max-width: 240px
+                    display: block
+                    font-family: $font2
+                    font-size: 1.1rem
+                    font-weight: 600
+                    color: $primary
+                    text-align: center
+                    margin: 30px auto
+                    padding: 8px 
+                    border: 2px solid $primary
+                    transition: .5s linear all
+                    &:hover
+                        color: white
+                        background: $primary
+
+@media (max-width: 400px) and (max-height: 400px)
+    /* Plans */
+    .plans
+        .container
+            .display-1
+                font-size: 1.5rem
+
+@media (min-width: 450px)
+    /* Plans */
+    .plans
+        .container
+            .all-plans
+                .item
+                    .item-objetive
+                        li
+                            font-size: 1rem
+
+@media (min-width: 767px)
+    /* Plans */
+    .plans
+        .container
+            .all-plans
+                .contain
+                    .btn
+                        width: 260px
+                        max-width: unset
+                        font-size: 1.3rem
+
+@media (min-width: 1000px)
+    /* Planes */
+    .plans
+        .container
+            .all-plans
+                justify-content: space-between
+                .item
+                    max-width: 480px
+                    margin: 30px 0
+                    .box
+                        img
+                            width: 80px
+                            height: 80px
+                        h1
+                            font-size: 1.5rem

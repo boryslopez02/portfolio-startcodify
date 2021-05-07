@@ -1,0 +1,66 @@
+/* Techbar */
+.tech-bar 
+    padding: 15px 0px
+    background: $primary
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-wrap: wrap
+        .tech
+            display: block
+            width: 80px
+            height: 80px
+            margin: 10px 15px
+            opacity: 0.5
+            transition: .3s ease all
+            &:hover
+                opacity: 1
+        .tech:nth-child(5)
+            width: 70px
+            height: 70px
+
+@media (max-width: 400px) and (max-height: 400px)
+    /* Techbar */
+    .tech-bar 
+        .container
+            .tech
+                width: 60px
+                height: 60px
+            .tech:nth-child(5)
+                width: 50px
+                height: 50px
+
+@media (min-width: 576px)
+    .tech-bar 
+        .container
+            .tech
+                width: 100px
+                height: 100px
+            .tech:nth-child(5)
+                width: 90px
+                height: 90px
+
+@media (min-width: 670px)
+    .tech-bar 
+        .container
+            padding: 0
+            .tech
+                width: 60px
+                height: 60px
+                margin: 10px 5px
+            .tech:nth-child(5)
+                width: 50px
+                height: 50px
+
+@media (min-width: 992px)
+    .tech-bar 
+        .container
+            justify-content: space-between
+            flex-wrap: nowrap
+            .tech
+                width: 70px
+                height: 70px
+            .tech:nth-child(5)
+                width: 60px
+                height: 60px

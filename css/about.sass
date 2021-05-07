@@ -1,0 +1,45 @@
+/* About */
+.about
+    padding: 80px 0px
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        .box-text
+            width: 90%
+            .display-1
+                font-size: 2rem
+                font-weight: 800
+                color: $primary
+                margin-bottom: 15px
+            p
+                font-size: 1.2rem 
+                font-weight: 300
+                line-height: 35px
+                color: $dark
+                margin-bottom: 20px
+
+@media (max-width: 400px) and (max-height: 400px)
+    /* About */
+    .about
+        .container
+            .box-text
+                .display-1
+                    font-size: 1.5rem
+                p
+                    font-size: 1rem 
+
+@media (min-width: 767px)
+    /* About */
+    .about
+        .container
+            .box-text
+                text-align: center
+
+@media (min-width: 1000px)
+    /* About */
+    .about
+        .container
+            .box-text
+                width: 100%

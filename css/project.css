@@ -1,0 +1,24 @@
+.single-project {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 250px;
+}
+
+.single-project::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: #ffffffc2;
+}
+
+.shop2 {
+  background-image: url(../img/shopify-2/main.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
